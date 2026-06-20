@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Janvière &amp; Pacifique · 11 July 2026</title>
+    <meta
+      name="description"
+      content="A quiet promise, written by two. Join Janvière Uwimbabazi and Pacifique Muhinyuza on July 11, 2026."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="fonts/GreatVibes-Regular.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Ambient audio (auto-play attempted; falls back to a discreet button) -->
+    <audio
+      id="ambient"
+      src="audio/Andy BUMUNTU - IGITEGO [ Official Video ].mp3"
+      preload="auto"
+      loop
+    ></audio>
+
+    <button class="audio-toggle" id="audioToggle" type="button" aria-label="Toggle music" aria-pressed="false">
+      <span class="audio-toggle__icon" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span class="audio-toggle__text">Music</span>
+    </button>
+
+    <!-- Top frame — pill nav -->
+    <header class="frame" aria-label="Site frame">
+      <div class="frame__pill">
+        <a href="#top" class="frame__brand" aria-label="Janvière and Pacifique — home">
+          <span class="frame__monogram">J <span class="frame__amp">&amp;</span> P</span>
+        </a>
+        <nav class="frame__nav" aria-label="Primary">
+          <a href="#story">Story</a>
+          <a href="#film">Film</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#day">Schedule</a>
+          <a href="#countdown">Countdown</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <picture class="hero__photo" aria-hidden="true">
+        <img src="images/hero.png" alt="" />
+      </picture>
+      <div class="hero__veil" aria-hidden="true"></div>
+
+      <div class="hero__inner">
+        <p class="kicker" data-reveal="fade">Two souls &middot; One quiet promise</p>
+
+        <h1 class="couple" data-reveal="up">Janvière &amp; Pacifique</h1>
+
+        <p class="hero__save" data-reveal="up">save the date, 11<sup>th</sup> July 2026.</p>
+      </div>
+
+      <a href="#story" class="hero__scroll" aria-label="Scroll to story">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- STORY -->
+    <section class="section section--story" id="story">
+      <div class="section__head">
+        <span class="section__eyebrow">Chapter I</span>
+        <h2 class="section__title">Our Story</h2>
+        <p class="section__lede">
+          Two souls, one quiet promise, and a story still being written.
+        </p>
+      </div>
+
+      <article class="story" data-reveal="up">
+        <header class="story__head">
+          <span class="story__num">01</span>
+          <h3 class="story__title">Our Beginning</h3>
+        </header>
+        <div class="story__content">
+          <p class="story__body">
+            What started as a chance conversation became late-night calls, shared playlists, and a
+            thousand small decisions to keep choosing each other. We&rsquo;re so grateful for the
+            people who watched it unfold &mdash; and we&rsquo;d love for you to be there as we make
+            it official.
+          </p>
+        </div>
+      </article>
+
+      <div class="story__rule" aria-hidden="true">
+        <span></span>
+        <svg width="22" height="22" viewBox="0 0 22 22"><circle cx="11" cy="11" r="3" fill="currentColor"/></svg>
+        <span></span>
+      </div>
+
+      <article class="story story--mirror" data-reveal="up">
+        <header class="story__head">
+          <span class="story__num">02</span>
+          <h3 class="story__title">The Moment Everything Changed</h3>
+        </header>
+        <div class="story__content">
+          <p class="story__body story__body--lead"><em>He asked. She cried. The answer was always yes.</em></p>
+          <p class="story__body">
+            Under a sky neither of us will forget, I got down on one knee and Janvière said yes
+            before he could even finish the sentence. It&rsquo;s the moment that set everything
+            after it in motion.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <!-- FILM -->
+    <section class="section section--film" id="film">
+      <div class="section__head section__head--light">
+        <span class="section__eyebrow">Chapter II</span>
+        <h2 class="section__title">Our Film</h2>
+        <p class="section__lede">A short look at the small moments that brought us here.</p>
+      </div>
+
+      <figure class="film" data-reveal="up">
+        <div class="film__frame" id="filmFrame">
+          <video
+            id="filmVideo"
+            class="film__video"
+            src="video/jp.mp4"
+            poster=""
+            playsinline
+            preload="metadata"
+          ></video>
+          <button class="film__play" type="button" id="filmPlay" aria-label="Play film">
+            <svg width="28" height="28" viewBox="0 0 28 28" aria-hidden="true">
+              <path d="M10 7 L22 14 L10 21 Z" fill="currentColor"/>
+            </svg>
+          </button>
+        </div>
+        <figcaption class="film__caption">
+          Press play &mdash; or wait, the day itself will be even better.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section section--gallery" id="gallery">
+      <div class="section__head">
+        <span class="section__eyebrow">Chapter III</span>
+        <h2 class="section__title">In Frames</h2>
+        <p class="section__lede">A handful of mornings, late evenings, and ordinary days that meant everything.</p>
+      </div>
+
+      <div class="marquee" data-reveal="fade" aria-label="Photo gallery">
+        <div class="marquee__row marquee__row--a">
+          <div class="marquee__track">
+            <!-- repeated twice for seamless loop -->
+            <button class="tile" type="button" data-img="images/1.jpeg" aria-label="Open photo 1"><img src="images/1.jpeg" alt="Janvière and Pacifique, photograph 1" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/2.jpeg" aria-label="Open photo 2"><img src="images/2.jpeg" alt="Janvière and Pacifique, photograph 2" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/3.jpeg" aria-label="Open photo 3"><img src="images/3.jpeg" alt="Janvière and Pacifique, photograph 3" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/4.jpeg" aria-label="Open photo 4"><img src="images/4.jpeg" alt="Janvière and Pacifique, photograph 4" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/5.jpeg" aria-label="Open photo 5"><img src="images/5.jpeg" alt="Janvière and Pacifique, photograph 5" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/6.jpeg" aria-label="Open photo 6"><img src="images/6.jpeg" alt="Janvière and Pacifique, photograph 6" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/7.jpeg" aria-label="Open photo 7"><img src="images/7.jpeg" alt="Janvière and Pacifique, photograph 7" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/1.jpeg"><img src="images/1.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/2.jpeg"><img src="images/2.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/3.jpeg"><img src="images/3.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/4.jpeg"><img src="images/4.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/5.jpeg"><img src="images/5.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/6.jpeg"><img src="images/6.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/7.jpeg"><img src="images/7.jpeg" alt="" loading="lazy"/></button>
+          </div>
+        </div>
+
+        <div class="marquee__row marquee__row--b">
+          <div class="marquee__track">
+            <button class="tile" type="button" data-img="images/8.jpeg" aria-label="Open photo 8"><img src="images/8.jpeg" alt="Janvière and Pacifique, photograph 8" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/9.jpeg" aria-label="Open photo 9"><img src="images/9.jpeg" alt="Janvière and Pacifique, photograph 9" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/10.jpeg" aria-label="Open photo 10"><img src="images/10.jpeg" alt="Janvière and Pacifique, photograph 10" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/11.jpeg" aria-label="Open photo 11"><img src="images/11.jpeg" alt="Janvière and Pacifique, photograph 11" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/12.jpeg" aria-label="Open photo 12"><img src="images/12.jpeg" alt="Janvière and Pacifique, photograph 12" loading="lazy"/></button>
+            <button class="tile" type="button" data-img="images/13.jpeg" aria-label="Open photo 13"><img src="images/13.jpeg" alt="Janvière and Pacifique, photograph 13" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/8.jpeg"><img src="images/8.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/9.jpeg"><img src="images/9.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/10.jpeg"><img src="images/10.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/11.jpeg"><img src="images/11.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/12.jpeg"><img src="images/12.jpeg" alt="" loading="lazy"/></button>
+            <button class="tile" type="button" aria-hidden="true" tabindex="-1" data-img="images/13.jpeg"><img src="images/13.jpeg" alt="" loading="lazy"/></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- THE DAY -->
+    <section class="section section--day" id="day">
+      <div class="section__head section__head--light">
+        <span class="section__eyebrow">Chapter IV</span>
+        <h2 class="section__title">The Celebration Day</h2>
+        <p class="section__lede">
+          One day, three sacred moments &mdash; from the family blessing to the dancing under the stars.
+        </p>
+      </div>
+
+      <ol class="schedule" data-reveal="up">
+        <li class="schedule__item">
+          <div class="schedule__time">
+            <span class="schedule__hour">09</span>
+            <span class="schedule__min">:00</span>
+            <span class="schedule__ampm">AM</span>
+          </div>
+          <div class="schedule__body">
+            <h3 class="schedule__title">Gusaba no Gukwa</h3>
+            <p class="schedule__sub">Introduction &amp; Dowry Ceremony</p>
+            <p class="schedule__where">Impinga Village, Kicukiro &middot; KK 518 St</p>
+          </div>
+          <div class="schedule__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 6 l4 10 10 1 -8 7 3 11 -9 -6 -9 6 3 -11 -8 -7 10 -1 z" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+        </li>
+
+        <li class="schedule__item">
+          <div class="schedule__time">
+            <span class="schedule__hour">02</span>
+            <span class="schedule__min">:00</span>
+            <span class="schedule__ampm">PM</span>
+          </div>
+          <div class="schedule__body">
+            <h3 class="schedule__title">Gusezerana imbere y&rsquo;Imana</h3>
+            <p class="schedule__sub">Religious Wedding Ceremony</p>
+            <p class="schedule__where">EAR Remera Parish &middot; Paroisse Remera</p>
+          </div>
+          <div class="schedule__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M20 6 v28 M10 16 h20" fill="none" stroke="currentColor" stroke-width="1"/></svg>
+          </div>
+        </li>
+
+        <li class="schedule__item">
+          <div class="schedule__time">
+            <span class="schedule__hour">05</span>
+            <span class="schedule__min">:00</span>
+            <span class="schedule__ampm">PM</span>
+          </div>
+          <div class="schedule__body">
+            <h3 class="schedule__title">Kwakira Abatumirwa</h3>
+            <p class="schedule__sub">Reception &amp; Dinner</p>
+            <p class="schedule__where">Impinga Village, Kicukiro &middot; KK 518 St</p>
+          </div>
+          <div class="schedule__mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40">
+              <circle cx="14" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="1"/>
+              <circle cx="26" cy="22" r="6" fill="none" stroke="currentColor" stroke-width="1"/>
+            </svg>
+          </div>
+        </li>
+      </ol>
+
+      <p class="schedule__note" data-reveal="fade">
+        Dress code: garden formal in soft, earthy tones. Comfortable shoes are kindly encouraged &mdash; we&rsquo;d love to see everyone on the dance floor.
+      </p>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section section--countdown" id="countdown" aria-live="polite">
+      <div class="section__head section__head--centered section__head--light">
+        <span class="section__eyebrow">Chapter V</span>
+        <p class="section__lede">Every day, a little closer.</p>
+      </div>
+
+      <div class="countdown" data-reveal="up" data-wedding="2026-07-11T09:00:00+02:00">
+        <div class="countdown__unit">
+          <span class="countdown__num" data-unit="days">000</span>
+          <span class="countdown__lbl">days</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__num" data-unit="hours">00</span>
+          <span class="countdown__lbl">hours</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__num" data-unit="minutes">00</span>
+          <span class="countdown__lbl">minutes</span>
+        </div>
+        <span class="countdown__sep" aria-hidden="true">:</span>
+        <div class="countdown__unit">
+          <span class="countdown__num" data-unit="seconds">00</span>
+          <span class="countdown__lbl">seconds</span>
+        </div>
+      </div>
+
+      <p class="countdown__signoff" data-reveal="fade">
+        With love &mdash; and quiet anticipation &mdash; we&rsquo;ll see you on July 11.
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="foot">
+      <div class="foot__inner">
+        <div class="foot__brand">
+          <span class="foot__monogram" aria-hidden="true">
+            <svg viewBox="0 0 80 80" width="64" height="64">
+              <circle cx="40" cy="40" r="38" fill="none" stroke="currentColor" stroke-width="0.8"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Great Vibes, cursive" font-size="36" fill="currentColor">J&amp;P</text>
+            </svg>
+          </span>
+          <p class="foot__couple">Janvière &amp; Pacifique</p>
+          <p class="foot__date">Save the date, 11<sup>th</sup> July 2026.</p>
+        </div>
+
+        <p class="foot__copy">&copy; 2026 J&amp;P &middot; Crafted with love by Yvette.</p>
+      </div>
+    </footer>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+      <button class="lightbox__close" type="button" aria-label="Close">
+        <svg width="22" height="22" viewBox="0 0 22 22"><path d="M4 4 L18 18 M18 4 L4 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--prev" type="button" aria-label="Previous photo">
+        <svg width="22" height="22" viewBox="0 0 22 22"><path d="M14 4 L6 11 L14 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="lightbox__nav lightbox__nav--next" type="button" aria-label="Next photo">
+        <svg width="22" height="22" viewBox="0 0 22 22"><path d="M8 4 L16 11 L8 18" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <figure class="lightbox__stage">
+        <img class="lightbox__img" alt="" />
+        <figcaption class="lightbox__count"><span id="lbIndex">1</span> &middot; <span id="lbTotal">13</span></figcaption>
+      </figure>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
